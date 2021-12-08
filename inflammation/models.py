@@ -6,6 +6,9 @@ class Observation:
     def __str__(self):
         return str(self.value)
 
+    def __repr__(self):
+        return str(self.value)
+
 class Person:
     def __init__(self, name):
         self.name = name
@@ -41,9 +44,9 @@ class Doctor(Person):
         super().__init__(name)
         self.patients = []
 
-    def add_patient(self, Patient):
-        self.patients.append(Patient)
-        Patient.doctor = self.name
+    def add_patient(self, patient: Patient):
+        self.patients.append(patient)
+        patient.doctor = self.name
 
     @property
     def patient_list(self):
@@ -53,16 +56,15 @@ class Doctor(Person):
         return self.name
 
 alice = Patient('Alice')
-print(alice)
 
 obs = alice.add_observation(3)
-print(obs)
 
 bob = Person('Bob')
-print(bob)
 
 DrSmith = Doctor("Dr Smith")
 DrSmith.add_patient((alice))
 patients = DrSmith.patient_list
-for patient in patients:
-    print(patient)
+#for patient in patients:
+#    print(patient)
+
+#print(alice.observations)

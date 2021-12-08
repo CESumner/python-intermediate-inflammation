@@ -10,16 +10,19 @@ def test_create_patient():
     p.add_observation(obs)
 
     assert p.name == name
-    assert p.observations == obs
+    assert p.observations[0].value == obs
+    assert len(p.observations) == 1
 
 def test_create_doctor():
-    from inflammation.models import Doctor
+    from inflammation.models import Doctor, Patient
+
+    patient_name = 'Alice'
+    p = Patient(name=patient_name)
 
     name = 'Dr Smith'
-    patients = ['Alice', 'Beth', 'Chloe']
     d = Doctor(name=name)
-    for patient in patients:
-        d.add_patient(patient)
+    d.add_patient(p)
 
     assert d.name == name
-    assert d.patients == patients
+    assert d.patients[0] == p
+    assert len(d.patients) == 1
