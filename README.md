@@ -1,5 +1,7 @@
 # Inflam
 
+![Continuous Integration build in GitHub Actions](https://github.com/CESumner/python-intermediate-inflammation/workflows/CI/badge.svg?branch=main)
+
 Inflam is a data management system written in Python that manages trial data used in clinical inflammation studies.
 
 ## Main features
@@ -42,7 +44,3 @@ This software was created via the Carpentries Incubator project: [Intermediate R
 ## Licence
 
 The software is available under a GNU General Public License v3.0.
-
-## Inflam
-
-![Continuous Integration build in GitHub Actions](https://github.com/CESumner/python-intermediate-inflammation/workflows/CI/badge.svg?branch=main)
