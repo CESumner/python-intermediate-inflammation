@@ -23,26 +23,26 @@ The following optional packages are required to run Inflam's unit tests:
 - [pytest](https://docs.pytest.org/en/stable/) - Inflam's unit tests are written using pytest
 - [pytest-cov](https://pypi.org/project/pytest-cov/) - Adds test coverage stats to unit testing
 
-#Installation/deployment
+##Installation/deployment
 
 After cloning the repository ([download](https://github.com/CESumner/python-intermediate-inflammation.git)) the attached requirements file can be used to install dependencies with:
 
 > $ pip3 install -r requirements.txt
 
-#Basic usage
+##Basic usage
 
 To view data in a csv file, call the inflamation-analysis python file with --view record option, for the patient you would like view, and with a pointer to the csv file containing the data.
 
 > python3 inflammation-analysis.py --view record --patient 1 data/inflammation-01.csv
 
-#Credits/Acknowledgements
+##Credits/Acknowledgements
 
 This software was created via the Carpentries Incubator project: [Intermediate Research Software Development in Python](https://github.com/carpentries-incubator/python-intermediate-development).
 
-#Licence
+##Licence
 
 The software is available under a GNU General Public License v3.0.
 
-# Inflam
+##Inflam
 
 ![Continuous Integration build in GitHub Actions](https://github.com/CESumner/python-intermediate-inflammation/workflows/CI/badge.svg?branch=main)
